@@ -7,7 +7,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #fff8f0; /* light warm tone */
+    background-color: #fff8f0;
     color: #333;
     line-height: 1.6;
 }
@@ -15,24 +15,24 @@ body {
 /* Header */
 header {
     text-align: center;
-    padding: 30px 20px;
-    background-color: #f4e1d2; /* soft brownish background */
+    padding: 40px 20px;
+    background-color: #f4e1d2; /* soft brownish tone */
 }
 
 header .logo {
     max-width: 150px;
     display: block;
-    margin: 0 auto 10px;
+    margin: 0 auto 15px;
 }
 
 header h1 {
-    font-size: 2rem;
-    color: #6b3e26; /* brown color matching logo */
+    font-size: 2.2rem;
+    color: #6b3e26;
     margin-bottom: 5px;
 }
 
 header p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: #8c5e42;
 }
 
@@ -42,21 +42,29 @@ header p {
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
-    padding: 30px 20px;
+    padding: 40px 20px;
 }
 
 .food-card {
-    flex: 1 1 300px;
+    flex: 1 1 250px;
     max-width: 300px;
     overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     transition: transform 0.3s;
+    text-align: center;
+    background-color: #fff;
 }
 
 .food-card img {
     width: 100%;
     display: block;
+}
+
+.food-card p {
+    padding: 10px;
+    font-weight: bold;
+    color: #6b3e26;
 }
 
 .food-card:hover {
@@ -68,6 +76,6 @@ footer {
     text-align: center;
     padding: 20px;
     background-color: #f4e1d2;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     color: #6b3e26;
 }
