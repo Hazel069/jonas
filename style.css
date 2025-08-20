@@ -1,0 +1,73 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8f0; /* light warm tone */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #f4e1d2; /* soft brownish background */
+}
+
+header .logo {
+    max-width: 150px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #6b3e26; /* brown color matching logo */
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #8c5e42;
+}
+
+/* Gallery */
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px 20px;
+}
+
+.food-card {
+    flex: 1 1 300px;
+    max-width: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.food-card img {
+    width: 100%;
+    display: block;
+}
+
+.food-card:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4e1d2;
+    font-size: 0.9rem;
+    color: #6b3e26;
+}
