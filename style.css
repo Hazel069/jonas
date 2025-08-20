@@ -1,4 +1,4 @@
-/* Reset */
+/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -7,53 +7,79 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #fff8f0;
+    background-color: #fff8f0; /* soft warm tone */
     color: #333;
     line-height: 1.6;
 }
 
-/* Header */
+/* HEADER */
 header {
     text-align: center;
-    padding: 40px 20px;
-    background-color: #f4e1d2; /* soft brownish tone */
+    padding: 50px 20px;
+    background-color: #f4e1d2; /* brownish tone */
 }
 
 header .logo {
-    max-width: 150px;
+    max-width: 180px;
     display: block;
     margin: 0 auto 15px;
 }
 
 header h1 {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     color: #6b3e26;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
-header p {
+header .tagline {
     font-size: 1.2rem;
     color: #8c5e42;
+    font-style: italic;
 }
 
-/* Gallery */
+/* ABOUT */
+.about {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2rem;
+    color: #6b3e26;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+/* GALLERY */
 .gallery {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 2rem;
+    color: #6b3e26;
+    margin-bottom: 30px;
 }
 
 .food-card {
-    flex: 1 1 250px;
-    max-width: 300px;
-    overflow: hidden;
+    display: inline-block;
+    width: 300px;
+    margin: 10px;
     border-radius: 12px;
+    overflow: hidden;
+    background-color: #fff;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     transition: transform 0.3s;
-    text-align: center;
-    background-color: #fff;
+    vertical-align: top;
 }
 
 .food-card img {
@@ -63,19 +89,49 @@ header p {
 
 .food-card p {
     padding: 10px;
-    font-weight: bold;
     color: #6b3e26;
+    font-weight: bold;
 }
 
 .food-card:hover {
     transform: scale(1.05);
 }
 
-/* Footer */
+/* SERVICES */
+.services {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2rem;
+    color: #6b3e26;
+    margin-bottom: 20px;
+}
+
+.services ul {
+    list-style-type: disc;
+    margin: 0 auto;
+    max-width: 400px;
+    text-align: left;
+    color: #8c5e42;
+    font-size: 1.1rem;
+}
+
+/* FOOTER */
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 30px 20px;
     background-color: #f4e1d2;
-    font-size: 0.95rem;
     color: #6b3e26;
+}
+
+footer h2 {
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin-bottom: 5px;
 }
